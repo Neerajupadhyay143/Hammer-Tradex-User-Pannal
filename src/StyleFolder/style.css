@@ -191,3 +191,147 @@ input {
     max-width: 50%;
 }}
 
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+}
+.drop_header_bg {
+    background: #c3a177;
+    padding: 15px !important;
+}
+.dropdown-header {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 0;
+    /* font-family: "RedHatDisplay ExtraBold"; */
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+}
+.drop_header_bg h2 {
+    color: #000;
+    font-size: 1rem;
+    /* color: #212529; */
+    text-align: left;
+    opacity: .5;
+    margin-top: 10px;
+}
+.tokens_count {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.dropdown-menu-lg .dropdown-divider {
+    margin: 0;
+}
+.dropdown-divider {
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+}
+
+.dropdown-menu-lg .dropdown-item {
+    padding: 0.5rem 1rem;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    transition: 150ms;
+}
+.dropdown-item:hover{
+    background-color: #000;
+}
+.dropdown-menu-lg {
+    max-width: 300px;
+    min-width: 280px;
+    padding: 0;
+}
+.drop_items span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #747882 !important;
+    padding: 2px 15px 2px 5px;
+}
+.MuiDrawer-root>.MuiDrawer-modal{
+background: #c3a177 !important;
+}
+
+/* login css */
+
+.dflex {
+  background: url('/public/body-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dLeft {
+    
+    padding: 2rem;
+   
+    background: black;
+
+    width: 450px;
+    margin: auto;
+}
+.logo {
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+.loginForm {
+    padding: 20px 0 !important;
+}
+.loginForm .field-group {
+    margin-bottom: 15px;
+}
+input[type="text"], input[type="password"] {
+    height: 46px;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(235, 237, 242, .8);
+    padding: 1rem 0;
+    color: #6c7293;
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-default {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FF2222;
+    border: 1px solid #FF2222;
+    color: #fff;
+    height: 46px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.mainDiv{
+   
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: Poppins;
+    overflow-x: hidden;
+
+}
+.loginAction {
+    margin-top: 35px;
+    text-align: center;
+}

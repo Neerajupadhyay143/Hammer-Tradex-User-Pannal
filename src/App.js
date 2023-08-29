@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './Components/Header'
-import { BrowserRouter } from 'react-router-dom'
+
+import LoginPage from './Components/LoginPage'
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>
+      <LoginPage />
+   
 
     </>
   )

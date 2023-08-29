@@ -204,7 +204,6 @@ function Header(props) {
                     <Route path='/' element={<DashBoard />} ></Route>
                     <Route exact path='/StackManage' element={<StackManage />} ></Route>
                     <Route exact path='/ProfilePAge' element={<ProfilePAge />} ></Route>
-
                     <Route exact path='/MyIncome' element={<MyIncome />} ></Route>
                     <Route exact path='/MyTeamIncome' element={<MyTeamIncome />} ></Route>
                     <Route exact path='/PendingDeposite' element={<PendingDeposite />} ></Route>
