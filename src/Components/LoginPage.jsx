@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import "../StyleFolder/dashboards.css"
 import "../StyleFolder/style.css"
 
 function LoginPage() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [loading, setLoading] = useState(true);
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
@@ -18,13 +20,23 @@ function LoginPage() {
         event.preventDefault();
         // Perform form submission or other actions here
     };
+
+    useEffect(() => {
+        // Simulate a delay to showcase the loading animation
+        setTimeout(() => {
+            setLoading(false);
+        }, 5); // Change the delay as needed
+
+        // You can also fetch data or perform other initialization here
+    }, []);
     return (
         <>
+            <div className={`fade-in ${loading ? '' : 'active'}`}>
             <div className="dflex">
                 <div className="dLeft" style={{ borderRadius: 30 }}>
                     <div className="logo wow fadeInDown" style={{ visibility: 'visible', animationName: 'fadeInDown' }}><img src="https://hammertradex.com/public/front/assets/img/htx-logo.png" style={{ width: 200 }} alt="Logo" /></div>
                     <div className="loginForm">
-                       
+
                         <h4 style={{ color: 'white', textAlign: 'center' }}>Admin Panel</h4>
                         <form onSubmit={handleSubmit} method="post">
                             <input type="hidden" name="_token" defaultValue="b66aFctTonKhd73PjlzMG7wu4Oj0Wd3BFxkyEZXS" />
@@ -63,7 +75,7 @@ function LoginPage() {
                 </div>
             </div>
 
-          
+</div>
         </>
     )
 }
