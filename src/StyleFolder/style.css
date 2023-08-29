@@ -1,0 +1,193 @@
+.color_span {
+    color: #c3a177;
+    font-size: 26px;
+    font-weight: 600;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+@media (min-width: 992px){
+.col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}}
+/* @media (min-width: 768px){
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}}
+@media (min-width: 576px){
+.col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}} */
+
+.dash_para_details {
+    margin-left: auto;
+    text-align: right !important;
+    color: #747882;
+    font-weight: 500 !important;
+}
+.dash_para_details_mob {
+    display: none;
+}
+@media (min-width: 768px){
+body:not(.sidebar-mini-md) .content-wrapper {
+    transition: margin-left .3s ease-in-out;
+    margin-left: 25px;
+}}
+
+.light_border {
+    border-bottom: 1px solid rgba(177, 141, 95, .16862745098039217);
+}
+.dasgboard_main_section {
+    padding: 20px 40px;
+}
+.welcome_heading {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+}
+section {
+    display: block;
+}
+.container-fluid{
+        width: 100%;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+@media (min-width: 992px){
+.col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}}
+.profile_main_section .nav-tabs {
+    border-bottom: none;
+    border-bottom: 1px solid rgba(177, 141, 95, .16862745098039217);
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+.profile_main_section .nav-item>.nav-link.active {
+    border: none;
+    color: #767676 !important;
+    border-bottom: 3px solid #c3a177;
+    background: transparent !important;
+    transition: 450ms;
+}
+#home-tab:hover{
+    border:'1px solid white '!important;
+    color: white !important;
+}
+#contact-tab:hover{
+    border:'1px solid white '!important;
+    color: white !important;
+}
+#Password-tab:hover{
+    border:'1px solid white '!important;
+    color: white !important;
+}
+.profile_main_section .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background: transparent;
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    color: #747882 !important;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+}
+.tab-content>.active {
+    display: block;
+}
+
+.fade {
+    transition: opacity .15s linear;
+}
+@media (min-width: 992px){
+.col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}}
+@media (min-width: 768px){
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}}
+.profile_main_section .dasgboard_boxes_main_dark {
+    background: #161616;
+    border: 1px solid rgba(177, 141, 95, .6509803921568628);
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+}
+.profile_section_tabs_inner_main {
+    padding: 20px;
+}
+.profile_update {
+    color: #721c24;
+    letter-spacing: .5px;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    /* margin: 30px 20px 0!important; */
+    padding: 10px 0 !important;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+.form_main_div {
+    margin-top: 20px;
+}
+input {
+    overflow: visible;
+}
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+@media (min-width: 992px){
+.col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}}
+.text-primary {
+    color: #007bff!important;
+}
+@media (min-width: 992px){
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}}
+
