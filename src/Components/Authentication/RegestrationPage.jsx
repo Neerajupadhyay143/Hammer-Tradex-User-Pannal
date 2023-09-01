@@ -1,7 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-export const baseURL = "https://misty-pelican.cyclic.cloud/api/v1"
+import TwitterIcon from '@mui/icons-material/Twitter';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+// export const baseURL = "https://misty-pelican.cyclic.cloud/api/v1"
+import { baseURL } from '../../token';
 function RegestrationPage() {
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -70,37 +76,37 @@ function RegestrationPage() {
 
     const handleVerifyNumberClick = async () => {
         try {
-            const queryParams = {
-                mode: isPhoneNumberVerified ? 'email' : "phone",
-            }
-            console.log("mode", queryParams.mode)
-            const requestBody = {
-                phone: "91" + phoneNumber,
-                OTP: otpInputs,
-                email: email,
-                role: 'basic'
-            };
-            console.log(requestBody);
-            const response = await axios.post(baseURL + '/user/verify', requestBody, {
-                params: queryParams,
-            })
+            // const queryParams = {
+            //     mode: isPhoneNumberVerified ? 'email' : "phone",
+            // }
+            // console.log("mode", queryParams.mode)
+            // const requestBody = {
+            //     phone: "91" + phoneNumber,
+            //     OTP: otpInputs,
+            //     email: email,
+            //     role: 'basic'
+            // };
+            // console.log(requestBody);
+            // const response = await axios.post(baseURL + '/user/verify', requestBody, {
+            //     params: queryParams,
+            // })
 
-            console.log(response.data.data.accessToken);
-            console.log("name", response);
+            // console.log(response.data.data.accessToken);
+            // console.log("name", response);
 
-            if (response.status === 200) {
-                setIsPhoneNumberVerified(true);
-                setShowEmailField(true);
-                setIsEmailVerified(true);
-                setIsVerifying(false);
-                setShowOtpFields(false);
-                setIsGetOtpDisabled(true);
+            // if (response.status === 200) {
+            setIsPhoneNumberVerified(true);
+            setShowEmailField(true);
+            setIsEmailVerified(true);
+            setIsVerifying(false);
+            setShowOtpFields(false);
+            setIsGetOtpDisabled(true);
 
-                if (response.status === 200 && isEmailVerified) {
-                    navigate(`/SignUpPage?name=${name}&phoneNumber=${phoneNumber}&email=${email}`);
-                    localStorage.setItem('access_token', response.data.data.accessToken);
-                }
-            }
+            //     if (response.status === 200 && isEmailVerified) {
+            //         navigate(`/SignUpPage?name=${name}&phoneNumber=${phoneNumber}&email=${email}`);
+            //         localStorage.setItem('access_token', response.data.data.accessToken);
+            //     }
+            // }
         }
         catch (err) {
             console.log(err);
@@ -332,13 +338,13 @@ function RegestrationPage() {
                                                 </div>
                                                 <div className="col-lg-12 col-md-12 col-sm-12">
                                                     {isVerifying ? (<>
-                                                        <button style={{ cursor: 'pointer' }} className="form_submit_btn" name="submit" defaultValue="Register Now" id="submit" onClick={() => {
+                                                        <button style={{ cursor: 'pointer' }} className="form_submit_btn" type="button" name="submit" defaultValue="Register Now" id="submit" onClick={() => {
                                                             handleVerifyNumberClick()
                                                         }} >  {isEmailVerified ? "Verify Email" : "Verify Number"}</button>
                                                     </>) :
                                                         (<>
                                                             <button
-                                                            type='submit'
+                                                                type='button'
                                                                 style={{ cursor: 'pointer' }}
                                                                 className="form_submit_btn"
                                                                 name="submit"
@@ -346,6 +352,7 @@ function RegestrationPage() {
                                                                 id="submit"
                                                                 onClick={handleGetOtpClick}
                                                                 disabled={isGetOtpDisabled}
+
                                                             >Get OTP</button>
 
                                                         </>)}
@@ -375,11 +382,11 @@ function RegestrationPage() {
                                                 <div>
                                                     <h3>Join Our Community</h3>
                                                     <div className="footer_social_div">
-                                                        <a href="#"><i className="fa fa-twitter" /></a>
-                                                        <a href="#"><i className="fa fa-telegram" /></a>
-                                                        <a href="#"><i className="fa fa-instagram" /></a>
-                                                        <a href="#"><i className="fa fa-linkedin" /></a>
-                                                        <a href="#"><i className="fa fa-facebook" /></a>
+                                                        <span><TwitterIcon /></span>
+                                                        <span><TelegramIcon /></span>
+                                                        <span><InstagramIcon /></span>
+                                                        <span><LinkedInIcon /></span>
+                                                        <span><FacebookIcon /></span>
                                                     </div>
                                                 </div>
                                             </div>

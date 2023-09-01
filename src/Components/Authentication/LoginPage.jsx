@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import "../StyleFolder/dashboards.css"
-import "../StyleFolder/style.css"
+// import "../StyleFolder/dashboards.css"
+// import "../StyleFolder/style.css"
 
 function LoginPage() {
 

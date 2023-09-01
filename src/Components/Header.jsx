@@ -37,7 +37,7 @@ const drawerWidth = 240;
 
 function Header(props) {
     const { window } = props;
-    const [mobileOpen, setMobileOpen] = useState(false);
+    const [mobileOpen, setMobileOpen] = useState(true);
 
     const navigate = useNavigate();
 
@@ -145,10 +145,10 @@ function Header(props) {
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
-                        onClick={() => handleDrawerToggle}
+                        onClick={() =>handleDrawerToggle}
                         sx={{ mr: 2, display: { sm: 'none' } }}
                     >
-                        <MenuIcon />
+                        <MenuIcon  />
                     </IconButton>
 
 
@@ -170,7 +170,7 @@ function Header(props) {
                 <Drawer
                     container={container}
                     variant="temporary"
-                    open={mobileOpen}
+                    open={!mobileOpen}
                     onClose={() => handleDrawerToggle}
                     ModalProps={{
                         keepMounted: true, // Better open performance on mobile.
